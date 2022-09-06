@@ -18,12 +18,12 @@ const books = [
 ];
 
 const names = ["john", "peter", "susan"];
-const newName = names.map((name) => {
-  console.log(name);
+const newNames = names.map((name) => {
+  return <h1>{name}</h1>;
 });
 
 function BookList() {
-  return <section className="bookList">{names}</section>;
+  return <section className="bookList">{newNames}</section>;
 }
 
 const Book = (props) => {
