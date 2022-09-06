@@ -33,7 +33,11 @@ const Image = () => (
 );
 
 const Title = () => <h1>I love you to the moon</h1>;
-const Author = () => <h4>Nguyen Quoc Nhat</h4>;
+const Author = () => (
+  <h4 style={{ color: "#617d98", fontSize: "0.75rem", marginTop: "0.25rem" }}>
+    Nguyen Quoc Nhat
+  </h4>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<BookList />);
