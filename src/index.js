@@ -3,16 +3,32 @@ import ReactDOM from "react-dom";
 
 // CSS
 import "./index.css";
-const author = "Nguyen Quoc Nhat";
-const title = "I love you to the moon";
-const img =
-  "https://media.geeksforgeeks.org/img-practice/Layer2-1637062356.svg";
+// setup vars
+const firstBook = {
+  img: "https://media.geeksforgeeks.org/img-practice/Layer2-1637062356.svg",
+  title: "I love you to the moon",
+  author: "Nguyen Quoc Nhat",
+};
+
+const secondBook = {
+  img: "https://media.geeksforgeeks.org/img-practice/Layer2(1)-1637066767.svg",
+  title: "Our class is my family",
+  author: "John Wick",
+};
 
 function BookList() {
   return (
     <section className="bookList">
-      <Book job="developer" />
-      <Book title="random title" number={22} />
+      <Book
+        img={firstBook.img}
+        title={firstBook.title}
+        author={firstBook.author}
+      />
+      <Book
+        img={secondBook.img}
+        title={secondBook.title}
+        author={secondBook.author}
+      />
     </section>
   );
 }
@@ -20,12 +36,9 @@ function BookList() {
 const Book = (props) => {
   return (
     <article className="book">
-      <img src={img} alt="" />
-      <h1>{title}</h1>
-      <h4>{author}</h4>
-      <p>{props.job}</p>
-      <p>{props.title}</p>
-      <p>{props.number}</p>
+      <img src={props.img} alt="" />
+      <h1>{props.title}</h1>
+      <h4>{props.author}</h4>
     </article>
   );
 };
