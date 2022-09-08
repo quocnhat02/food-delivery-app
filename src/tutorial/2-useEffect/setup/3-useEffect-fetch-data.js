@@ -11,7 +11,9 @@ const UseEffectFetchData = () => {
     console.log(users);
   };
 
-  useEffect(async () => {});
+  useEffect(() => {
+    getUsers();
+  });
 
   return (
     <>
