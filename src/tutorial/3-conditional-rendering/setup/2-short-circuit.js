@@ -17,6 +17,7 @@ const ShortCircuit = () => {
       }
     } */}
       <h1>{text || "john doe"}</h1>
+      {text && <h1>hello world</h1>}
     </>
   );
 };
