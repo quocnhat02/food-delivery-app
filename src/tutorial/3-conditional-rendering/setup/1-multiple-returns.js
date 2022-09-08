@@ -20,7 +20,11 @@ const MultipleReturns = () => {
       </div>
     );
   }
-  return <h2>multiple returns</h2>;
+  return (
+    <div>
+      <h1>{user}</h1>
+    </div>
+  );
 };
 
 export default MultipleReturns;
