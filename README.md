@@ -1,6 +1,12 @@
 ## Corresponding Projects
 
+<<<<<<< HEAD
 #### useState
+=======
+# Project basic
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+>>>>>>> 60d3de02390bde976b509b4b809e52b0e927aec4
 
 1. Birthday Reminder
 
