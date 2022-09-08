@@ -6,7 +6,7 @@ const ShortCircuit = () => {
   const [text, setText] = useState("");
   const firstValue = text || "hello world";
   const secondValue = text && "hello world";
-
+  console.log(secondValue);
   return (
     <>
       <h1>{firstValue}</h1>
