@@ -5,7 +5,7 @@ import Tours from "./Tours";
 // I SWITCHED TO PERMANENT DOMAIN
 const url = "https://course-api.com/react-tours-project";
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [tours, setTours] = useState([]);
   if (loading) {
     return (
@@ -14,7 +14,11 @@ function App() {
       </main>
     );
   }
-  return <h2>Tours Project Setup</h2>;
+  return (
+    <main>
+      <Tours />
+    </main>
+  );
 }
 
 export default App;
