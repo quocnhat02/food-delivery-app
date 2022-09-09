@@ -8,6 +8,7 @@ const ShowHide = () => {
       <button className="btn" onClick={() => setShow(!show)}>
         show/hide
       </button>
+      {show && <Item />}
     </>
   );
 };
