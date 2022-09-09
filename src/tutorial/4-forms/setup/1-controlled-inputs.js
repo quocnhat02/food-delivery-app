@@ -7,6 +7,7 @@ import React, { useState } from "react";
 
 const ControlledInputs = () => {
   const handleSubmit = (e) => {
+    e.preventDefault();
     console.log("hello world");
   };
 
@@ -22,7 +23,9 @@ const ControlledInputs = () => {
             <label htmlFor="email">Email : </label>
             <input type="text" id="email" name="email" />
           </div>
-          <button type="submit">add person</button>
+          <button type="submit" onClick={handleSubmit}>
+            add person
+          </button>
         </form>
       </article>
     </>
