@@ -22,6 +22,10 @@ const Item = () => {
 
   useEffect(() => {
     window.addEventListener("resize", checkSize);
+
+    return () => {
+      window.removeEventListener("resize", checkSize);
+    };
   }, []);
 
   return (
