@@ -52,6 +52,15 @@ const ControlledInputs = () => {
             add person
           </button>
         </form>
+        {people.map((person) => {
+          const { id, firstName, email } = person;
+          return (
+            <div className="item">
+              <h4>{firstName}</h4>
+              <p>{email}</p>
+            </div>
+          );
+        })}
       </article>
     </>
   );
