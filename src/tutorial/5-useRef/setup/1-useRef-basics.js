@@ -27,7 +27,7 @@ const UseRefBasics = () => {
           <button type="submit"> submit</button>
         </div>
       </form>
-      <div ref={divContainer}>Hello World</div>
+      <div ref={divContainer}>Learn React Hook</div>
     </>
   );
 };
