@@ -40,6 +40,15 @@ function App() {
           <h3>{title}</h3>
           <h4>{company}</h4>
           <p className="job-date">{dates}</p>
+          {duties.map((duty, index) => {
+            return (
+              <div className="job-desc">
+                <FaAngleDoubleRight className="job-icon">
+                  <p>{duty}</p>
+                </FaAngleDoubleRight>
+              </div>
+            );
+          })}
         </article>
       </div>
     </section>
