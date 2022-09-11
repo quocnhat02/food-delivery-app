@@ -56,6 +56,12 @@ const SingleCocktail = () => {
     }
     getCocktail();
   }, [id]);
+  if (loading) {
+    return <Loading />;
+  }
+  if (!cocktail) {
+    return <h2 className="section-title">no cocktail to display</h2>;
+  }
 
   return (
     <div>
