@@ -14,10 +14,15 @@ const AppProvider = ({ children }) => {
     try {
       const response = await fetch(`${url}${searchTerm}`);
       const data = await response.json();
+      console.log(data);
     } catch (error) {
       console.log(error);
     }
   };
+
+  useEffect(() => {
+    fetchDrinks();
+  }, [searchTerm]);
 
   return (
     <AppContext.Provider value={{ loading, cocktails, setSearchTerm }}>
