@@ -3,6 +3,11 @@ import React from 'react';
 import instagram from '../assets/instagram.png';
 import arrowdown from '../assets/arrowdown.png';
 import search from '../assets/search-icon.png';
+import home from '../assets/home.png';
+import message from '../assets/message.png';
+import upload from '../assets/upload.png';
+import discover from '../assets/discover.png';
+import hearth from '../assets/hearth.png';
 
 const Header = () => {
   return (
@@ -29,6 +34,23 @@ const Header = () => {
           />
         </div>
         {/* Right */}
+        <div className="flex">
+          <div className="Btn">
+            <Image src={home} />
+          </div>
+          <div className="Btn">
+            <Image src={message} />
+          </div>
+          <div className="Btn">
+            <Image src={upload} />
+          </div>
+          <div className="Btn">
+            <Image src={discover} />
+          </div>
+          <div className="Btn">
+            <Image src={hearth} />
+          </div>
+        </div>
       </div>
     </div>
   );
