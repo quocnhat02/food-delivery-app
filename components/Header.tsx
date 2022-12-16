@@ -17,14 +17,14 @@ const Header = () => {
         {/* Left */}
         <div className="flex items-center">
           <div className="w-28">
-            <Image src={instagram} />
+            <Image src={instagram} alt="" />
           </div>
           <div className="h-3 w-3">
-            <Image src={arrowdown} />
+            <Image src={arrowdown} alt="" />
           </div>
         </div>
         {/* Middle */}
-        <div className="hidden w-72 sm:flex relative items-center">
+        <div className="hidden w-72 sm:flex relative items-center mx-2">
           <div className="absolute flex w-4 h-4 ml-2">
             <Image src={search} alt="icon-search" />
           </div>
@@ -36,24 +36,24 @@ const Header = () => {
         </div>
         {/* Right */}
         <div className="flex space-x-5">
-          <div className="Btn">
-            <Image src={home} />
+          <div className="Btn hidden sm:flex">
+            <Image src={home} alt="home" />
+          </div>
+          <div className="Btn hidden sm:flex">
+            <Image src={message} alt="" />
           </div>
           <div className="Btn">
-            <Image src={message} />
+            <Image src={upload} alt="" />
           </div>
-          <div className="Btn">
-            <Image src={upload} />
+          <div className="Btn hidden sm:flex">
+            <Image src={discover} alt="" />
           </div>
-          <div className="Btn">
-            <Image src={discover} />
-          </div>
-          <div className="Btn">
-            <Image src={hearth} />
+          <div className="Btn hidden sm:flex">
+            <Image src={hearth} alt="" />
           </div>
           <div className="flex">
             <div className="Btn mr-5 ">
-              <Image src={profile} className="rounded-full" />
+              <Image src={profile} className="rounded-full" alt="" />
             </div>
             <button className="cursor-pointer text-[#0095f6] font-semibold whitespace-nowrap">
               Sign out
