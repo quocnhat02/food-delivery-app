@@ -6,10 +6,10 @@ import search from '../assets/search-icon.png';
 
 const Header = () => {
   return (
-    <div>
-      <div className="flex">
+    <div className="border-b shadow-sm">
+      <div className="flex justify-between items-center h-16 px-2">
         {/* Left */}
-        <div className="flex">
+        <div className="flex items-center">
           <div className="w-28">
             <Image src={instagram} />
           </div>
@@ -18,11 +18,15 @@ const Header = () => {
           </div>
         </div>
         {/* Middle */}
-        <div className="flex">
-          <div className="absolute flex items-center w-3 h-3">
+        <div className="hidden w-72 sm:flex relative items-center">
+          <div className="absolute flex w-4 h-4 ml-2">
             <Image src={search} alt="icon-search" />
           </div>
-          <input type="text" placeholder="Search" />
+          <input
+            className="h-9 w-full rounded-md bg-[#efefef] pl-8 outline-0"
+            type="text"
+            placeholder="Search"
+          />
         </div>
         {/* Right */}
       </div>
