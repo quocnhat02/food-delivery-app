@@ -13,7 +13,7 @@ import profile from '../assets/profile.jpg';
 const Header = () => {
   return (
     <div className="border-b shadow-sm">
-      <div className="flex justify-between items-center h-16 px-2">
+      <div className="flex justify-between items-center h-16 px-2 max-w-5xl mx-auto">
         {/* Left */}
         <div className="flex items-center">
           <div className="w-28">
@@ -39,8 +39,9 @@ const Header = () => {
           <div className="Btn hidden sm:flex">
             <Image src={home} alt="home" />
           </div>
-          <div className="Btn hidden sm:flex">
+          <div className="Btn hidden sm:flex relative">
             <Image src={message} alt="" />
+            <div className="absolute flex -top-1 left-3.5 items-center justify-center bg-red-500 text-white rounded-full w-4 h-4 text-xs"></div>
           </div>
           <div className="Btn">
             <Image src={upload} alt="" />
