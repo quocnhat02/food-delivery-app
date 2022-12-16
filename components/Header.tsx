@@ -8,6 +8,7 @@ import message from '../assets/message.png';
 import upload from '../assets/upload.png';
 import discover from '../assets/discover.png';
 import hearth from '../assets/hearth.png';
+import profile from '../assets/profile.jpg';
 
 const Header = () => {
   return (
@@ -34,7 +35,7 @@ const Header = () => {
           />
         </div>
         {/* Right */}
-        <div className="flex">
+        <div className="flex space-x-5">
           <div className="Btn">
             <Image src={home} />
           </div>
@@ -49,6 +50,14 @@ const Header = () => {
           </div>
           <div className="Btn">
             <Image src={hearth} />
+          </div>
+          <div className="flex">
+            <div className="Btn mr-5 ">
+              <Image src={profile} className="rounded-full" />
+            </div>
+            <button className="cursor-pointer text-[#0095f6] font-semibold whitespace-nowrap">
+              Sign out
+            </button>
           </div>
         </div>
       </div>
